@@ -42,6 +42,6 @@ Rails.application.routes.draw do
   # root to: "home#index"
   mount ActionCable.server => '/cable'
 
-  resources :chatrooms, param: :slug
+  resources :chatrooms
   resources :messages
 end
